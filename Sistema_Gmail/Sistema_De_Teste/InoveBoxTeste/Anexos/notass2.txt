@@ -1,0 +1,136 @@
+Desenvolva um sistema para uma biblioteca que gerencie livros,emprestadores e transação de emprestimo. O 
+sistema deve permitir que os utilizadores a adicionem livros, e registem os emprestadores e rastreem as
+transações de emprestimos. Além disso, a obrigatoriedade de gerar relatorios sobre o livros em atrasos e 
+calculos de multas.
+
+- REQUISITOS -
+
+Data de Última Actualização: 26/03/2023
+
+-- ALFREDO(feito)
+
+* Livros
+
+-- Crud
+-- Apenas Admin								
+-- ATRIBUTOS --								-- ATRIBUTOS AUTORES-- 		-- ATRIBUTOS EDITORA--		-- ATRIBUTOS CATEGORIA--
+-> Id  - int								-> Id	- int			-> Id - int			-> Id -int				
+-> Isbn	 - int								-> Nome	 - String		-> Nome	-String			-> Nome	- String				
+-> Titulo  - String											-> Telefone - int
+-> Autores (Tabela) 											-> Endereco - String
+-> Disponibilidade(Sim, Não)  - Boolean									-> Email - String	
+-> Editora (Tabela)								
+-> AnoDePublicacao - int
+-> Quantidade - int
+-> Prateleira (Tabela)
+-> Categoria (Tabela)
+
+
+* Prateleiras
+-- Crud
+-- CDD(Classificação Decimal de Dewey)
+-- Apenas Admin
+-> Id - int
+-> Nome - string
+
+-- ALFREDO
+
+--- ALEXANDRE(feito)
+
+* Consultadores
+-- Crud
+-- Apenas Usuário Comum
+-- ATRIBUTOS --
+-> Id - int
+-> Nome - String
+-> Telefone - int
+-> Endereco - String
+-> Email - String
+-> BI - String
+ 
+
+* Emprestadores
+-- Crud
+-- Apenas Usuario comum
+-- ATRIBUTOS --
+-> Id - int
+-> Nome - String
+-> Telefone - int
+-> Endereco - String
+-> Email - String
+-> BI  - String
+
+* Utilizadores
+-- Crud
+-- Administrador e Usuário Comum
+-- ATRIBUTOS --							-- ATRIBUTOS TABELA CARGO--
+-> Id - int							-> Id - int
+-> Nome - String						-> Nome - String
+-> Telefone - int
+-> Endereco - String
+-> Email - String
+-> BI -String
+-> Cargo(Tabela)
+-> HorarioDeTrabalho - Time
+
+-- ALEXANDRE
+
+* Transacoes
+- Registar Empréstimo
+- Renovar Empréstimo
+- Registar Consulta
+- Reservar Livro
+- Validar Empréstimo e Consulta(Actualizar devolução, definir limite de quantidade de livros emprestados)
+- Relatório de Livros em Atrasos e Multas
+
+--ALFREDO(feito)
+
+-- ATRIBUTOS TABELA EMPRESTIMO--					-- ATRIBUTOS TABELA ESTADO_Emprestimo --		
+-> Id	- int								
+-> Livros (Tabela)							Nome(Emprestado, Devolvido, Em Atraso) 
+-> Emprestador (Tabela)
+-> DataDoEmprestimo - Date
+-> DataDeDevolucaoPrevista - Date
+-> DataDevolvida - Date(Nulo)
+-> ValorMulta - Decimal(Nulo)
+
+-- ATRIBUTOS TABELA CONSULTA --
+-> Id	- int
+-> Livros (Tabela)
+-> Consultor (Tabela)
+-> DataDaConsulta - dataTime
+-> HorarioDaEntrega -Time
+
+-ALFREDO
+
+-ALEXANDRE(feito)
+  
+-- ATRIBUTOS TABELA RESERVA -- 						-- ATRIBUTOS TABELA ESTADO_Reserva --
+-> Id	- int								-> Id - int
+-> Livros (Tabela)							-> Nome(Pendente, reservado, cancelado) - String
+-> Emprestador (Tabela)
+-> DataDeReserva - date
+-> Estado (TABELA)
+-> DataDevolucao - date(nulo)
+
+
+-ALEXANDRE
+
+Data de Última Actualização: 28/03/2023
+
+-- Alexandre
+
+Serviços -> prateleira(feito), editora(feito)
+
+Serviços -> pessoa(feito), funcionario(feito)
+
+Serviços -> emprestimo(feito)
+
+
+-- Alfredo
+
+Serviços-> autor(feito), categoria(feito)
+
+Serviços-> Livro(feito), Consulta(feito)
+
+

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45A4E2C8-85F6-457E-BAD4-D1D2CCBE4864}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Prolipol.Formacao.WF.My.MyApplication</StartupObject>
+    <RootNamespace>Prolipol.Formacao.WF</RootNamespace>
+    <AssemblyName>Prolipol.Formacao.WF</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prolipol.Formacao.WF.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prolipol.Formacao.WF.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTables\BaseDataTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTables\BorrowerDataTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTables\BookDataTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTables\LoanDataTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ISynchronizeInvoke.vb" />
+    <Compile Include="MainView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.vb">
+      <DependentUpon>MainView.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\BookDetailsView.Designer.vb">
+      <DependentUpon>BookDetailsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookDetailsView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BookReportView.Designer.vb">
+      <DependentUpon>BookReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BookView.Designer.vb">
+      <DependentUpon>BookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BorrowerDetailsView.Designer.vb">
+      <DependentUpon>BorrowerDetailsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BorrowerDetailsView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BorrowerReportView.Designer.vb">
+      <DependentUpon>BorrowerReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BorrowerReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BorrowersView.Designer.vb">
+      <DependentUpon>BorrowersView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BorrowersView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoanDetailsView.Designer.vb">
+      <DependentUpon>LoanDetailsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoanDetailsView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoanReportView.Designer.vb">
+      <DependentUpon>LoanReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoanReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoanView.Designer.vb">
+      <DependentUpon>LoanView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoanView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewBookView.Designer.vb">
+      <DependentUpon>NewBookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewBookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewBorrowerView.Designer.vb">
+      <DependentUpon>NewBorrowerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewBorrowerView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewLoanView.Designer.vb">
+      <DependentUpon>NewLoanView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewLoanView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReturnBookView.Designer.vb">
+      <DependentUpon>ReturnBookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReturnBookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateBookView.Designer.vb">
+      <DependentUpon>UpdateBookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateBookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateBorrowerView.Designer.vb">
+      <DependentUpon>UpdateBorrowerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateBorrowerView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UpdateLoanView.Designer.vb">
+      <DependentUpon>UpdateLoanView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateLoanView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookDetailsView.resx">
+      <DependentUpon>BookDetailsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookReportView.resx">
+      <DependentUpon>BookReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookView.resx">
+      <DependentUpon>BookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BorrowerDetailsView.resx">
+      <DependentUpon>BorrowerDetailsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BorrowerReportView.resx">
+      <DependentUpon>BorrowerReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BorrowersView.resx">
+      <DependentUpon>BorrowersView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoanDetailsView.resx">
+      <DependentUpon>LoanDetailsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoanReportView.resx">
+      <DependentUpon>LoanReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoanView.resx">
+      <DependentUpon>LoanView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewBookView.resx">
+      <DependentUpon>NewBookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewBorrowerView.resx">
+      <DependentUpon>NewBorrowerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewLoanView.resx">
+      <DependentUpon>NewLoanView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReturnBookView.resx">
+      <DependentUpon>ReturnBookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateBookView.resx">
+      <DependentUpon>UpdateBookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateBorrowerView.resx">
+      <DependentUpon>UpdateBorrowerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpdateLoanView.resx">
+      <DependentUpon>UpdateLoanView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prolipol.Formacao.Dapper\Prolipol.Formacao.Dapper.vbproj">
+      <Project>{5e34e197-fdab-4105-8325-b0c6d700aa88}</Project>
+      <Name>Prolipol.Formacao.Dapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolipol.Formacao.Domain\Prolipol.Formacao.Domain.vbproj">
+      <Project>{8d2023c1-5b67-4fa9-b3be-6aff0bcc58c6}</Project>
+      <Name>Prolipol.Formacao.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

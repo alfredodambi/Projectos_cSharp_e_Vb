@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InoveBoxTeste", "InoveBoxTeste\InoveBoxTeste.vbproj", "{F3785EF0-BE6E-4A6F-97AB-3726B9810D6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3785EF0-BE6E-4A6F-97AB-3726B9810D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3785EF0-BE6E-4A6F-97AB-3726B9810D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3785EF0-BE6E-4A6F-97AB-3726B9810D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3785EF0-BE6E-4A6F-97AB-3726B9810D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D0F3A4B-68C6-499D-A066-0E98AB968A8E}
+	EndGlobalSection
+EndGlobal
