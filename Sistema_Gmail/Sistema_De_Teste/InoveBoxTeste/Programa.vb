@@ -121,8 +121,8 @@ Module Programa
 
     'Obter Credencial
     Private Function ObterCredencial() As Task(Of UserCredential)
-        Dim idDoCliente As String = "280570157718-u7iltcf286v1q252b6gkmop0f9t7io2m.apps.googleusercontent.com"
-        Dim senhaDoCliente As String = "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"
+        Dim idDoCliente As String = "" 'Removido
+        Dim senhaDoCliente As String = "" 'Removido
         Dim escopo As String() = {GmailService.Scope.MailGoogleCom}
 
         Return GoogleWebAuthorizationBroker.AuthorizeAsync(

@@ -25,8 +25,8 @@ Namespace Servicos
 
         Public Function ObterCredencial()
             Dim escopo As String() = {GmailService.Scope.GmailModify}
-            Dim idDoCliente As String = "280570157718-u7iltcf286v1q252b6gkmop0f9t7io2m.apps.googleusercontent.com"
-            Dim senhaDoCliente As String = "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"
+            Dim idDoCliente As String = "" 'Removido
+            Dim senhaDoCliente As String = "" 'Removido
 
             Return GoogleWebAuthorizationBroker.AuthorizeAsync(
                                 New ClientSecrets With {.ClientId = idDoCliente, .ClientSecret = senhaDoCliente},
